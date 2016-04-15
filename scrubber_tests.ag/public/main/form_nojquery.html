@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Scrubb Information</title>
+    <link rel="stylesheet" type="text/css" href="view.css" media="all">
+    <script type="text/javascript" src="view.js"></script>
+    <script src="../js/jquery-2.2.2.min.js"></script>
+</head>
+<body id="main_body">
+
+<div id="form_container">
+
+    <h1><a>Scrubb Information</a></h1>
+
+    <form id="myForm" class="appnitro" method="post" action="http://scrubber.ag/scrubb/bccc1fe7-e745-4343-b53b-6145993f177e">
+        <div class="form_description">
+            <h2>Scrubb Information</h2>
+            <p>Enter the customer's information to scrubb</p>
+        </div>
+        <ul>
+
+            <li class="section_break">
+                <h3>Scrubber</h3>
+                <p></p>
+            </li>
+            <li id="li_1">
+                <label class="description" for="scrubber">Select a Scrubber </label>
+
+                <div>
+                    <select class="element select medium scrubber" id="scrubber" name="scrubber">
+                        <option value=""></option>
+                        <option value="Discover" selected="selected">Discover</option>
+                        <option value="AcuityTec">AcuityTec</option>
+                        <option value="Iovation">Iovation</option>
+
+                    </select>
+                </div>
+                <p class="guidelines" id="guide_1">
+                    <small>Use Discover if you want to use all possible Scrubbers.</small>
+                </p>
+            </li>
+            <li id="li_1a">
+                <label class="description" for="scrubberType">Select the Scrubber type </label>
+
+                <div>
+                    <select class="element select medium scrubber" id="scrubberType" name="scrubberType">
+                        <option value=""></option>
+                        <option value="Discover" selected="selected">Discover</option>
+                        <option value="Person">Person</option>
+                        <option value="Card">Card</option>
+                        <option value="Device">Device</option>
+                    </select>
+                </div>
+                <p class="guidelines" id="guide_1a">
+                    <small>Use Discover if you want to use all possible Scrubbers types.</small>
+                </p>
+            </li>
+            <li class="section_break">
+                <h3>Customer Information</h3>
+                <p></p>
+            </li>
+            <li id="li_1b">
+                <label class="description" for="infoFirstName">First Name </label>
+
+                <div>
+                    <input id="infoFirstName" name="infoFirstName" class="element text medium info" type="text" maxlength="255"
+                           value="John"/>
+                </div>
+            </li>
+            <li id="li_2">
+                <label class="description" for="infoLastName">Last Name </label>
+
+                <div>
+                    <input id="infoLastName" name="infoLastName" class="element text medium info" type="text" maxlength="255"
+                           value="Doe"/>
+                </div>
+            </li>
+            <li id="li_2a">
+                <label class="description" for="infoLastName2">Second Last Name </label>
+
+                <div>
+                    <input id="infoLastName2" name="infoLastName2" class="element text medium info" type="text" maxlength="255"
+                           value="Foreigner"/>
+                </div>
+            </li>
+            <li id="li_2b">
+                <label class="description" for="infoEmail">Email </label>
+
+                <div>
+                    <input id="infoEmail" name="infoEmail" class="element text medium info" type="text" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_2c">
+                <label class="description" for="infoPhone">Phone </label>
+
+                <div>
+                    <input id="infoPhone" name="infoPhone" class="element text medium info" type="text" maxlength="255"
+                           value="850-488-1234"/>
+                </div>
+            </li>
+            <li class="section_break">
+                <h3>Customer Address</h3>
+                <p></p>
+            </li>
+            <li id="li_3">
+                <label class="description" for="address1">Address 1 </label>
+
+                <div>
+                    <input id="address1" name="address1" class="element text medium address" type="text" maxlength="255"
+                           value="5322 Otter Lane"/>
+                </div>
+            </li>
+            <li id="li_4">
+                <label class="description" for="address2">Address 2 </label>
+
+                <div>
+                    <input id="address2" name="address2" class="element text medium address" type="text" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_19">
+                <label class="description" for="addressCountry">Country </label>
+
+                <div>
+                    <select class="element select medium address" id="addressCountry" name="addressCountry">
+                        <option value="" selected="selected"></option>
+                        <option value="CA">CA</option>
+                        <option value="GB">GB</option>
+                        <option value="US" selected="selected">US</option>
+
+                    </select>
+                </div>
+            </li>
+            <li id="li_20">
+                <label class="description" for="addressRegion">State </label>
+
+                <div>
+                    <select class="element select medium address" id="addressRegion" name="addressRegion">
+                        <option value=""></option>
+                        <option value="FL" selected="selected">FL</option>
+                        <option value="OH">OH</option>
+                        <option value="WA">WA</option>
+
+                    </select>
+                </div>
+            </li>
+            <li id="li_5">
+                <label class="description" for="addressPostal">Zip/Postal </label>
+
+                <div>
+                    <input id="addressPostal" name="addressPostal" class="element text medium address" type="text" maxlength="255"
+                           value="55555"/>
+                </div>
+            </li>
+            <li class="section_break">
+                <h3>Localisation Info</h3>
+                <p></p>
+            </li>
+            <li id="li_10">
+                <label class="description" for="localLang">Ip </label>
+
+                <div>
+                    <input id="localLang" name="localLang" class="element text medium local" type="text" maxlength="255"
+                           value="en-us"/>
+                </div>
+            </li>
+            <li id="li_10a">
+                <label class="description" for="localIp">Ip </label>
+
+                <div>
+                    <input id="localIp" name="localIp" class="element text medium local" type="text" maxlength="255"
+                           value="186.32.56.208"/>
+                </div>
+            </li>
+            <li id="li_11">
+                <label class="description" for="localDeviceId">Device Id </label>
+
+                <div>
+                    <textarea id="localDeviceId" name="localDeviceId" class="element textarea medium local">sdlfkjsd902iireiie</textarea>
+                </div>
+            </li>
+            <li id="li_12">
+                <label class="description" for="localLatitude">Latitude </label>
+
+                <div>
+                    <input id="localLatitude" name="localLatitude" class="element text medium local" type="text" maxlength="255"
+                           value="10.0880859"/>
+                </div>
+            </li>
+            <li id="li_13">
+                <label class="description" for="localLongitude">Longitude </label>
+
+                <div>
+                    <input id="localLongitude" name="localLongitude" class="element text medium local" type="text" maxlength="255"
+                           value="-84.4727167"/>
+                </div>
+            </li>
+            <li class="section_break">
+                <h3>Card Information</h3>
+
+                <p></p>
+            </li>
+            <li id="li_15">
+                <label class="description" for="cardNumber">Card Number </label>
+
+                <div>
+                    <input id="cardNumber" name="cardNumber" class="element text medium card" type="text" maxlength="255"
+                           value="4123412341234123"/>
+                </div>
+            </li>
+            <li id="li_15b">
+                <label class="description" for="cardHolder">Card Holder </label>
+
+                <div>
+                    <input id="cardHolder" name="cardHolder" class="element text medium card" type="text" maxlength="255"
+                           value="Benito Perez"/>
+                </div>
+            </li>
+            <li id="li_16">
+                <label class="description" for="cardFirstDigits">First Digits </label>
+
+                <div>
+                    <input id="cardFirstDigits" name="cardFirstDigits" class="element text medium card" type="text" maxlength="255"
+                           value="123456"/>
+                </div>
+            </li>
+            <li id="li_17">
+                <label class="description" for="cardLastDigits">Last Digits </label>
+
+                <div>
+                    <input id="cardLastDigits" name="cardLastDigits" class="element text medium card" type="text" maxlength="255"
+                           value="6890"/>
+                </div>
+            </li>
+
+            <li class="buttons">
+                <input type="hidden" name="form_id" value="1115308"/>
+                <input id="submitForm" class="button_text" type="submit" name="submit" value="Submit"/>
+            </li>
+        </ul>
+    </form>
+</div>
+<img id="bottom" src="bottom.png" alt="">
+
+
+</body>
+</html>

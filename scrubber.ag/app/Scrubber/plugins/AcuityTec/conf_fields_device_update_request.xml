@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<scrubber>
+    <headers>
+        <header name="dbInquiry" field="trnReferenceId" />
+    </headers>
+    <fields>
+        <field name="SessionId" variable="session_id" sys="sysSessionId" required="false" type="string" validator="reg@/^[-,a-zA-Z0-9]{1,128}$/" length="128" />
+        <field name="Transaction Id" variable="trans_id" sys="trnTransId" required="true" type="string" length="255" />
+        <field name="Internal Transaction Id" variable="internal_trans_id" sys="resReferenceId" required="true" type="string" length="255" />
+        <field name="Status" variable="status" sys="trnStatus" required="true" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="Reason" variable="reason" sys="resReason" required="true" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="Processor" variable="processor" sys="resProcessor" required="false" type="number" validator="reg@/[^0-9]+$/" length="255" />
+    </fields>
+</scrubber>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<scrubber>
+    <status steps="*" description="new transaction">
+        <status value="0" Description="Undefined" convert="undefined" />
+        <status value="1" Description="Approved" convert="approved" />
+        <status value="2" Description="Pre-Auth" convert="preauth" />
+        <status value="3" Description="Settled" convert="settled" />
+        <status value="4" Description="Void" convert="void" />
+        <status value="5" Description="Rejected" convert="rejected" />
+        <status value="6" Description="Declined" convert="declined" />
+        <status value="7" Description="Chargeback" convert="chargeback" />
+        <status value="8" Description="Return" convert="return" />
+        <status value="9" Description="Pending" convert="pending" />
+        <status value="10" Description="Pass" convert="pass" />
+        <status value="11" Description="Failed" convert="failed" />
+        <status value="12" Description="Refund" convert="refund" />
+        <status value="13" Description="Approved-Review" convert="review" />
+        <status value="14" Description="Abandon" convert="abandon" />
+    </status>
+</scrubber>

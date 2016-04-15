@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<scrubber>
+    <fields>
+		<!-- Profile Information -->
+		<field name="SessionId" variable="session_id" sys="sysSessionId" required="false" type="string" validator="reg@/^[-,a-zA-Z0-9]{1,128}$/" length="128" />
+		<field name="Username " variable="user_name" sys="sysUsername" required="false" type="string" validator="reg@/[a-z_\-0-9]/i" length="255" />
+		<field name="User Number" variable="user_number" sys="sysUserId" required="false" type="string" validator="reg@/[a-z_\-0-9]/i" length="255" />
+		<field name="Player Status" variable="player_status" sys="sysUserStatus" required="false" type="string" length="255" />
+		<field name="Registration Date" variable="reg_date" sys="sysRegDate" required="false" type="date" format="date@Y-m-d" length="255" />
+		<field name="Registration IP Address" variable="reg_ip_address" sys="sysRegIp" required="false" type="string" validator="Ip" length="255" />
+		<field name="Registration Device Id" variable="reg_device_id" sys="sysDeviceId" required="false" type="string" length="255" />
+		<!-- Customer Information -->
+		<field name="IP Address" variable="ip" sys="trnIp" from="request,db" required="true" type="string" validator="Ip" length="255" />
+		<field name="Device Id" variable="device_id" sys="trnDeviceId" required="true" type="string" length="255" />
+		<field name="Iovation Black Box" variable="Io_bb" sys="trnBb" required="true" type="string" length="10000" />
+		<!-- Miscellaneous -->
+		<field name="Local Time" variable="local_time" sys="miscLocalTime" required="false" type="time" format="date@YYY-MM-DD HH:MM:SS" length="255" />
+		<field name="Source" variable="source" sys="miscSource" required="false" type="string" validator="reg@/^(internet|mobile|inhouse)$/i" length="255" />
+		<field name="Website" variable="website" sys="miscWebsite" required="false" type="string" length="255" />
+		<field name="Customer's Password" variable="pass" sys="miscPassword" required="false" type="string" validator="reg@/[a-z_\-0-9]/i" length="255" />
+		<field name="Custom Variable" variable="custom_variable" sys="miscCustom" required="false" type="string" length="10000" />
+	</fields>
+</scrubber>

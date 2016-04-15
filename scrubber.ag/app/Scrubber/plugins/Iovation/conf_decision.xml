@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<scrubber>
+    <decisions for="default">
+        <decision score="-1|0" convert="approved" scrubbTypes="*" type="range" />
+        <decision score="0|2" convert="review" scrubbTypes="*" type="range" />
+        <decision score="2|3" convert="warning" scrubbTypes="*" type="range" />
+        <decision score="3|5" convert="declined" scrubbTypes="*" type="range" />
+    </decisions>
+    <decisions for="c8f30c70-2bd1-4130-879e-e9d31c47e4e9">
+        <decision score="-1|0" convert="approved" scrubbTypes="*" type="range" />
+        <decision score="0|1" convert="review" scrubbTypes="*" type="range" />
+        <decision score="1|2" convert="contact" scrubbTypes="*" type="range" />
+        <decision score="2|4" convert="warning" scrubbTypes="*" type="range" />
+        <decision score="4|5" convert="declined" scrubbTypes="*" type="range" />
+    </decisions>
+</scrubber>

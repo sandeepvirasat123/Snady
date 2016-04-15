@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<scrubber>
+    <suggests>
+        <suggest value="Approve" convert="approved" Description="The Transaction is OK" />
+        <suggest value="Preauth" convert="preauth" Description="The transaction is ok, however it needs to be reviewed. If possible, send it to a pre-auth enabled channel." />
+        <suggest value="DeclinedorRejected" convert="declined" Description="The transaction was rejected based on the screening process applied." />
+    </suggests>
+</scrubber>

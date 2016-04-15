@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<scrubber>
+    <headers>
+        <header name="dbInquiry" field="trnReferenceId" />
+    </headers>
+    <fields>
+        <field name="Internal Transaction Id" variable="internal_trans_id" sys="resReferenceId" required="true" type="string" length="255" />
+        <field name="Status" variable="status" sys="updateStatus" required="true" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="Description" variable="description" sys="updateDescription" required="true" type="number" validator="reg@/[^\-0-9]+$/" length="10" />
+    </fields>
+</scrubber>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<scrubber>
+    <action action="new" default="true">
+		<urls>
+			<setting setting="urlDev" type="string" value="https://dev.acuitytec.com/new"/>
+			<setting setting="urlProd" type="string" value="https://api.acuitytec.com/new"/>
+		</urls>
+		<credentials>
+			<setting setting="merchant_id" type="string" value="f08a7910-0032-450c-95a9-7951408781d4"/>
+			<setting setting="password" type="string" value="mypassword"/>
+		</credentials>
+		<scrubbTypes>
+			<setting setting="full" type="boolean" value="true"/>
+			<setting setting="person" type="boolean" value="false"/>
+			<setting setting="device" type="boolean" value="false"/>
+			<setting setting="card" type="boolean" value="false"/>
+			<setting setting="check" type="boolean" value="false"/>
+			<setting setting="wallet" type="boolean" value="false"/>
+		</scrubbTypes>
+    </action>
+    <action action="update">
+		<urls>
+			<setting setting="urlDev" type="string" value="https://dev.acuitytec.com/update"/>
+			<setting setting="urlProd" type="string" value="https://api.acuitytec.com/update"/>
+		</urls>
+		<credentials>
+			<setting setting="merchant_id" type="string" value="f08a7910-0032-450c-95a9-7951408781d4"/>
+			<setting setting="password" type="string" value="mypassword"/>
+		</credentials>
+		<scrubbTypes>
+			<setting setting="full" type="boolean" value="true"/>
+			<setting setting="person" type="boolean" value="false"/>
+			<setting setting="device" type="boolean" value="false"/>
+			<setting setting="card" type="boolean" value="false"/>
+			<setting setting="check" type="boolean" value="false"/>
+			<setting setting="wallet" type="boolean" value="false"/>
+		</scrubbTypes>
+    </action>
+</scrubber>

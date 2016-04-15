@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scrubber>
+  <errors description="errors">
+    <error value="-1" description="Username is not present" convert="UserNotPresent" />
+    <error value="-2" description="Registration Date is not present" convert="RegDateNotpresent" />
+    <error value="-3" description="Registration Date incorrect date format" convert="RegDateWrong" />
+    <error value="-4" description="Registration IP Address is not valid" convert="RegIpInvalid" />
+    <error value="-5" description="The Registration IP Address is not valid" convert="regIpInvalid" />
+    <error value="-6" description="Registration Device Id is not present" convert="RegDeviceMissing" />
+    <error value="-7" description="Session id is not present" convert="SessionMissing" />
+    <error value="-8" description="Session id is not present" convert="SessionMissing" />
+    <error value="-9" description="No customer information" convert="CustomerInfoMissing" />
+    <error value="-10" description="Customer first name is not present" convert="CustomerFirstMissing" />
+    <error value="-11" description="Customer last name is not present" convert="CustomerLastMissing" />
+    <error value="-12" description="Customer email is not present" scrub="*" convert="CustomerEmailMissing" />
+    <error value="-13" description="Wrong customer email format" convert="CustomerEmailWrong" />
+    <error value="-14" description="Customer address 1 is not present" convert="CustomerAddress1Missing" />
+    <error value="-15" description="Customer city is not present" convert="CustomerCityMissing" />
+    <error value="-16" description="Customer province is not present" convert="CustomerProvinceMissing" />
+    <error value="-17" description="Customer country is not present" convert="CustomerCountryMissing" />
+    <error value="-18" description="Customer phone 1 is  not present" convert="CustomerPhone1Missing" />
+    <error value="-19" description="Customer day of birth is not present" convert="CustomerBirthMissing" />
+    <error value="-20" description="Customer day of birth incorrect date format" convert="CustomerDobWrong" />
+    <error value="-21" description="Deposit count is not present" convert="DepositCountMissing" />
+    <error value="-22" description="Deposit count is not a integer number" convert="DepositCountWrong" />
+    <error value="-23" description="Withdrawal count is not present" convert="WithdrawalCountMissing" />
+    <error value="-24" description="Withdrawal count is not a integer number" convert="WithdrawalCountWrong" />
+    <error value="-25" description="No deposit limits information" convert="LimitsInfoMissing" />
+    <error value="-26" description="Payment method type is not present" convert="PayMethodMissing" />
+    <error value="-27" description="Payment method type is not valid" convert="PayMethodWrong" />
+    <error value="-28" description="No payment method information" convert="PayMethodMissing" />
+    <error value="-29" description="BIN is not present" convert="BinMissing" />
+    <error value="-30" description="BIN is not a integer number" convert="BinWrong" />
+    <error value="-31" description="Last 4 digits is not present" convert="Last4Missing" />
+    <error value="-32" description="Last 4 digits is not a integer number" convert="Last4Wrong" />
+    <error value="-33" description="Routing number not present" convert="RoutingMissing" />
+    <error value="-34" description="Routing number is not a integer number" convert="RoutingWrong" />
+    <error value="-35" description="Account number is not present" convert="AccountMissing" />
+    <error value="-36" description="Account number is not a integer number" convert="AccountWrong" />
+    <error value="-37" description="Ewallet is is not present" convert="EwalletMissing" />
+    <error value="-38" description="Ewallet id is not a integer number" convert="EwalletWrong" />
+    <error value="-39" description="Deposit limit min is not present" convert="LimitWrong" />
+    <error value="-40" description="Deposit limit min is not a integer number" convert="LimitWrong" />
+    <error value="-41" description="Deposit limit daily is not present" convert="LimitWrong" />
+    <error value="-42" description="Deposit limit daily is not a integer number" convert="LimitWrong" />
+    <error value="-43" description="Deposit limit weekly is not present" convert="LimitWrong" />
+    <error value="-44" description="Deposit limit weekly is not a integer number" convert="LimitWrong" />
+    <error value="-45" description="Deposit limit monthly is not present" convert="LimitWrong" />
+    <error value="-46" description="Deposit limit monthly is not a integer number" convert="LimitWrong" />
+    <error value="-47" description="Transaction id is not present" convert="WrongData" />
+    <error value="-48" description="Transaction already exists" convert="WrongData" />
+    <error value="-49" description="Amount id is not present" convert="WrongData" />
+    <error value="-50" description="Amount is not a integer number" convert="WrongData" />
+    <error value="-51" description="Currency is not present" convert="WrongData" />
+    <error value="-52" description="Time is not present" convert="WrongData" />
+    <error value="-53" description="Ip is not present" convert="WrongData" />
+    <error value="-54" description="The IP Address is not valid" convert="WrongData" />
+    <error value="-55" description="Device id is not present" convert="WrongData" />
+    <error value="-56" description="Invalid Session ID" convert="WrongData" />
+    <error value="-57" description="Invalid Merchant Login" convert="WrongData" />
+    <error value="-58" description="Merchant id is not present" convert="WrongData" />
+    <error value="-59" description="Password is not present" convert="WrongData" />
+    <error value="-60" description="Invalid Merchant Login" convert="WrongData" />
+    <error value="-61" description="Customer email is in blacklist" convert="WrongData" />
+    <error value="-62" description="Wrong time format" convert="WrongData" />
+    <error value="-63" description="Evidence" convert="WrongData" />
+    <error value="-64" description="User is not allowed" convert="WrongData" />
+    <error value="-65" description="Associated account with evidence" convert="WrongData" />
+    <error value="-66" description="Current IP Address is not present" convert="WrongData" />
+    <error value="-67" description="Current IP address is not valid" convert="WrongData" />
+    <error value="-68" description="lovation validation failed" convert="WrongData" />
+    <error value="-69" description="Processor transaction merchant_id error" convert="WrongData" />
+    <error value="-70" description="Processor transaction password error" convert="WrongData" />
+    <error value="-71" description="Processor transaction amount error" convert="WrongData" />
+    <error value="-72" description="Processor transaction currency error" convert="WrongData" />
+    <error value="-73" description="Processor transaction transaction_id error" convert="WrongData" />
+    <error value="-74" description="Processor transaction description error" convert="WrongData" />
+    <error value="-75" description="Processor transaction transaction_type error" convert="WrongData" />
+    <error value="-76" description="Processor transaction card_holder error" convert="WrongData" />
+    <error value="-77" description="Processor transaction card_number error" convert="WrongData" />
+    <error value="-78" description="Processor transaction expiration_date error" convert="WrongData" />
+    <error value="-79" description="Processor transaction expiration_year error" convert="WrongData" />
+    <error value="-80" description="Processor transaction cvv error" convert="WrongData" />
+    <error value="-81" description="Processor transaction address_line_1 error" convert="WrongData" />
+    <error value="-82" description="Processor transaction address_line_2 error" convert="WrongData" />
+    <error value="-83" description="Processor transaction city error" convert="WrongData" />
+    <error value="-84" description="Processor transaction state error" convert="WrongData" />
+    <error value="-85" description="Processor transaction postal_code error" convert="WrongData" />
+    <error value="-86" description="Processor transaction country error" convert="WrongData" />
+    <error value="-87" description="Processor transaction customer_email_error" convert="WrongData" />
+    <error value="-88" description="Processor transaction customer_phone" convert="WrongData" />
+    <error value="-89" description="Processor transaction ip_address_error" convert="WrongData" />
+    <error value="-90" description="Processor transaction Duplicated Transaction Id error" convert="WrongData" />
+    <error value="-91" description="Processor transaction processor error" convert="WrongData" />
+    <error value="-92" description="Processor transaction Processor not exist error" convert="WrongData" />
+    <error value="-93" description="Processor transaction first_name error" convert="WrongData" />
+    <error value="-94" description="Processor transaction last_name error" convert="WrongData" />
+    <error value="-95" description="Processor Error" convert="WrongData" />
+    <error value="-96" description="Quantity is not a number" convert="WrongData" />
+    <error value="-97" description="Wrong local_time format" convert="WrongData" />
+    <error value="-98" description="Wrong billing_email format" convert="WrongData" />
+    <error value="-99" description="Not Telesign information" convert="WrongData" />
+    <error value="-100" description="Not Telesign phone" convert="WrongData" />
+    <error value="-101" description="Not Telesign language" convert="WrongData" />
+    <error value="-102" description="Not Telesign verify code" convert="WrongData" />
+    <error value="-103" description="Not Telesign valid language" convert="WrongData" />
+    <error value="-104" description="Merchant mismatch" convert="WrongData" />
+    <error value="-105" description="Password mismatch" convert="WrongData" />
+    <error value="-106" description="CUSTOMER_INFORMATION_FIRST_NAME_ERROR" convert="WrongData" />
+    <error value="-107" description="CUSTOMER_INFORMATION_LAST_NAME_ERROR" convert="WrongData" />
+    <error value="-108" description="CUSTOMER_INFORMATION_EMAIL_ERROR" convert="WrongData" />
+    <error value="-109" description="CUSTOMER_INFORMATION_ADDRESS1_ERROR" convert="WrongData" />
+    <error value="-110" description="CUSTOMER_INFORMATION_ADDRESS2_ERROR" convert="WrongData" />
+    <error value="-111" description="CUSTOMER_INFORMATION_CITY_ERROR" convert="WrongData" />
+    <error value="-112" description="CUSTOMER_INFORMATION_PROVINCE_ERROR" convert="WrongData" />
+    <error value="-113" description="CUSTOMER_INFORMATION_POSTAL_CODE_ERROR" convert="WrongData" />
+    <error value="-114" description="CUSTOMER_INFORMATION_COUNTRY_ERROR" convert="WrongData" />
+    <error value="-115" description="CUSTOMER_INFORMATION_PHONE1_ERROR" convert="WrongData" />
+    <error value="-116" description="CUSTOMER_INFORMATION_PHONE2_ERROR" convert="WrongData" />
+    <error value="-117" description="CUSTOMER_INFORMATION_DOB_ERROR" convert="WrongData" />
+    <error value="-118" description="USERNAME_ERROR" convert="WrongData" />
+    <error value="-119" description="USERNUMBER_ERROR" convert="WrongData" />
+    <error value="-120" description="REGISTRATION_DATE_ERROR" convert="WrongData" />
+    <error value="-121" description="REGISTRATION_IP_ADDRESS_ERROR" convert="WrongData" />
+    <error value="-122" description="REGISTRATION_DEVICE_ID_ERROR" convert="WrongData" />
+    <error value="-123" description="BONUS_CODE_ERROR" convert="WrongData" />
+    <error value="-124" description="BONUS_SUBMISSION_DATE_ERROR" convert="WrongData" />
+    <error value="-125" description="BONUS_AMOUNT_ERROR" convert="WrongData" />
+    <error value="-126" description="BONUS_ID_ERROR" convert="WrongData" />
+    <error value="-127" description="STATUS_ERROR" convert="WrongData" />
+    <error value="-128" description="WEBSITE_ERROR" convert="WrongData" />
+    <error value="-129" description="HOW_DID_YOU_HEAR_ERROR" convert="WrongData" />
+    <error value="-130" description="AFFILIATE_ID_ERROR" convert="WrongData" />
+    <error value="-131" description="ID_TYPE_ERROR" convert="WrongData" />
+    <error value="-132" description="ID_VALUE_ERROR" convert="WrongData" />
+    <error value="-133" description="TRANSACTION_NOT_EXIST" convert="WrongData" />
+    <error value="-134" description="REFERENCE_ID_NOT_EXIST" convert="WrongData" />
+    <error value="-135" description="CODE_ENTERED_NOT_EXIST" convert="WrongData" />
+  </errors>
+</scrubber>

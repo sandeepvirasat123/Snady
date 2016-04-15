@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!--
+This xml maps the names of the scrubbing system fields to the names of the database or webservice fields or variables.
+-->
+<map url="http://dev.collabcr.com/">
+    <!-- Profile Information -->
+    <field sys="sysSessionId" variable="session_id" source="*" scratch="false" />
+    <field sys="sysUsername" variable="Username" source="getUserProfile" scratch="false" />
+    <field sys="sysUserId" variable="UserID" source="getUserProfile" scratch="false" />
+    <field sys="sysUserStatus" variable="Status" source="getUserProfile" scratch="false" />
+    <field sys="sysRegDate" variable="RegistrationDate" source="getUserProfile" scratch="false" />
+    <field sys="sysRegIp" variable="RegistrationIp" source="getUserProfile" scratch="false" />
+    <field sys="sysDeviceId" variable="DeviceId" source="getUserProfile" scratch="false" />
+    <!-- Customer Information -->
+    <field sys="infoFirstName" variable="FirstName" source="getUserProfile" scratch="false" />
+    <field sys="infoLastName" variable="LastName" source="getUserProfile" scratch="false" />
+    <field sys="infoEmail" variable="Email" source="getUserProfile" scratch="false" />
+    <field sys="infoAddress1" variable="Address1" source="getUserProfile" scratch="false" />
+    <field sys="infoAddress2" variable="Address2" source="getUserProfile" scratch="false" />
+    <field sys="infoCity" variable="City" source="getUserProfile" scratch="false" />
+    <field sys="infoProvince" variable="Province" source="getUserProfile" scratch="false" />
+    <field sys="infoPostalCode" variable="PostalCode" source="getUserProfile" scratch="false" />
+    <field sys="infoCountry" variable="Country" source="getUserProfile" scratch="false" />
+    <field sys="infoPhone1" variable="Phone1" source="getUserProfile" scratch="false" />
+    <field sys="infoPhone2" variable="Phone2" source="getUserProfile" scratch="false" />
+    <field sys="infoDOB" variable="BirthDate" source="getUserProfile" scratch="false" />
+    <field sys="infoIDType" variable="IdType" source="getUserProfile" scratch="false" />
+    <field sys="infoIDValue" variable="IdValue" source="getUserProfile" scratch="false" />
+    <field sys="infoGender" variable="Gender" source="getUserProfile" scratch="false" />
+    <!-- Financial -->
+    <field sys="finFirstDepositDate" variable="FirstDeposit" source="getUserFinancial" scratch="false" />
+    <field sys="finFirstWithdrawalDate" variable="WithdrawalDate" source="getUserFinancial" scratch="false" />
+    <field sys="finDepositCount" variable="NumDeposits" source="getUserFinancial" scratch="false" />
+    <field sys="finWithdrawalCount" variable="NumWithdraws" source="getUserFinancial" scratch="false" />
+    <field sys="finCurrentBalance" variable="Balance" source="getUserFinancial" scratch="false" />
+    <!-- Deposit Limits -->
+    <field sys="depositPaymentMethod" variable="pmntMethod" source="getUserLastTrans" scratch="false" />
+    <field sys="depositMin" variable="depmin" source="getUserLastTrans" scratch="false" />
+    <field sys="depositDaily" variable="depdaily" source="getUserLastTrans" scratch="false" />
+    <field sys="depositWeekly" variable="depweekly" source="getUserLastTrans" scratch="false" />
+    <field sys="depositMonthly" variable="depmonthly" source="getUserLastTrans" scratch="false" />
+    <!-- Current Transaction -->
+    <field sys="trnTransId" variable="transId" source="getUserLastTrans" scratch="false" />
+    <field sys="trnAmount" variable="transAmount" source="getUserLastTrans" scratch="false" />
+    <field sys="trnCurrency" variable="transCurrency" source="getUserLastTrans" scratch="false" />
+    <field sys="trnTime" variable="transTime" source="getUserLastTrans" scratch="false" />
+    <field sys="trnStatus" variable="transStatus" source="getUserLastTrans" scratch="false" />
+    <field sys="trnIp" variable="transIp" source="getUserLastTrans" scratch="false" />
+    <field sys="trnDeviceId" variable="transDeviceId" source="getUserLastTrans" scratch="false" />
+    <field sys="trnBb" variable="transBb" source="getUserLastTrans" scratch="false" />
+    <!-- Current Transaction Billing Information -->
+    <field sys="billingFirstName" variable="billFirstname" source="billingInfo" scratch="false" />
+    <field sys="billingLastName" variable="billLastname" source="billingInfo" scratch="false" />
+    <field sys="billingEmail" variable="billEmail" source="billingInfo" scratch="false" />
+    <field sys="billingAddress1" variable="billAddress1" source="billingInfo" scratch="false" />
+    <field sys="billingAddress2" variable="billAddress2" source="billingInfo" scratch="false" />
+    <field sys="billingCity" variable="billCity" source="billingInfo" scratch="false" />
+    <field sys="billingProvince" variable="billProvince" source="billingInfo" scratch="false" />
+    <field sys="billingPostalCode" variable="billPostalCode" source="billingInfo" scratch="false" />
+    <field sys="billingCountry" variable="billCountry" source="billingInfo" scratch="false" />
+    <field sys="billingPhone1" variable="billPhone1" source="billingInfo" scratch="false" />
+    <field sys="billingPhone2" variable="billPhone2" source="billingInfo" scratch="false" />
+    <field sys="billingDOB" variable="billBirthDAte" source="billingInfo" scratch="false" />
+    <field sys="billingGender" variable="billGender" source="billingInfo" scratch="false" />
+    <!-- Current Transaction Payment Method -->
+    <field sys="paymentFirst" variable="pmntFirst" source="getUserLastTrans" scratch="false" />
+    <field sys="paymentLast" variable="pmntLast" source="getUserLastTrans" scratch="false" />
+    <field sys="paymentHash" variable="pmntHash" source="getUserLastTrans" scratch="false" />
+    <field sys="paymentRouting" variable="pmntRouting" source="getUserLastTrans" scratch="false" />
+    <field sys="paymentAccount" variable="pmntAccount" source="getUserLastTrans" scratch="false" />
+    <field sys="paymentEwallet" variable="pmntAccountId" source="getUserLastTrans" scratch="false" />
+    <!-- Miscellaneous -->
+    <field sys="miscCartCount" variable="cartCount" source="getUserLastTrans" scratch="false" />
+    <field sys="miscLocalTime" variable="localTime" source="*" scratch="false" />
+    <field sys="miscSource" variable="source" source="*" scratch="false" />
+    <field sys="miscWebsite" variable="website" source="*" scratch="false" />
+    <field sys="miscPassword" variable="pass" source="*" scratch="false" />
+    <field sys="miscCustom" variable="custom" source="*" scratch="false" />
+    <!-- internal data -->
+    <field sys="resReferenceId" variable="scrubbReferenceId" source="getUserLastScrubb" scratch="false" />
+    <field sys="updateStatus" variable="scrubbStatus" source="getUserLastScrubb" scratch="false" />
+    <field sys="updateDescription" variable="scrubbDescription" source="getUserLastScrubb" scratch="false" />
+</map>

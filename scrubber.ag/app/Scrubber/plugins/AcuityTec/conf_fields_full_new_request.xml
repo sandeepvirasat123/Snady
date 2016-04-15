@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<scrubber>
+    <fields>
+        <!-- Profile Information -->
+        <field name="SessionId" variable="session_id" sys="sysSessionId" required="true" type="string" validator="reg@/^[-,a-zA-Z0-9]{1,128}$/" length="128" />
+        <field name="Username " variable="user_name" sys="sysUsername" required="false" type="string" validator="reg@/[a-z_\-0-9]/i" length="255" />
+        <field name="User Number" variable="user_number" sys="sysUserId" required="false" type="string" validator="reg@/[a-z_\-0-9]/i" length="255" />
+        <field name="Player Status" variable="player_status" sys="sysUserStatus" required="false" type="string" length="255" />
+        <field name="Registration Date" variable="reg_date" sys="sysRegDate" required="false" type="date" format="date@Y-m-d" length="255" />
+        <field name="Registration IP Address" variable="reg_ip_address" sys="sysRegIp" required="false" type="string" validator="Ip" length="255" />
+        <field name="Registration Device Id" variable="reg_device_id" sys="sysDeviceId" required="false" type="string" length="255" />
+        <!-- Customer Information -->
+        <field name="First Name" variable="customer_information[first_name]" sys="infoFirstName" required="false" type="string" length="255" />
+        <field name="Last Name" variable="customer_information[last_name]" sys="infoLastName" required="false" type="string" length="255" />
+        <field name="Email Address" variable="customer_information[email]" sys="infoEmail" required="false" type="string" length="255" />
+        <field name="Address 1" variable="customer_information[address1]" sys="infoAddress1" required="false" type="string" length="255" />
+        <field name="Address 2" variable="customer_information[address2]" sys="infoAddress2" required="false" type="string" length="255" />
+        <field name="City" variable="customer_information[city]" sys="infoCity" required="false" type="string" length="255" />
+        <field name="Province" variable="customer_information[province]" sys="infoProvince" required="false" type="string" length="255" />
+        <field name="Postal Code" variable="customer_information[postal_code]" sys="infoPostalCode" required="false" type="string" length="255" />
+        <field name="Country" variable="customer_information[country]" sys="infoCountry" required="false" type="string" length="255" />
+        <field name="Phone 1" variable="customer_information[phone1]" sys="infoPhone1" required="false" type="string" length="255" />
+        <field name="Phone 2" variable="customer_information[phone2]" sys="infoPhone2" required="false" type="string" length="255" />
+        <field name="Date of Birth" variable="customer_information[dob]" sys="infoDOB" required="false" type="date" format="date@Y-m-d" length="255" />
+        <field name="ID Type" variable="customer_information[id_type]" sys="infoIDType" required="false" type="string" length="255" />
+        <field name="ID Value" variable="customer_information[id_value]" sys="infoIDValue" required="false" type="string" length="255" />
+        <field name="Gender" variable="customer_information[gender]" sys="infoGender" required="false" type="string" length="255" />
+        <!-- Financial -->
+        <field name="First Deposit Date" variable="first_dep_date" sys="finFirstDepositDate" required="false" type="date" format="date@Y-m-d" length="255" />
+        <field name="First Withdrawal Date" variable="first_with_date" sys="finFirstWithdrawalDate" required="false" type="date" format="date@Y-m-d" length="255" />
+        <field name="Deposit Count" variable="dep_count" sys="finDepositCount" required="false" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="Withdrawal Count" variable="with_count" sys="finWithdrawalCount" required="false" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="Current Balance" variable="current_balance" sys="finCurrentBalance" required="false" type="money" validator="reg@/^[0-9]+(?:\.[0-9]{2}){0,1}$/" length="255" />
+        <!-- Deposit Limits -->
+        <field name="Payment Method" variable="deposit_limit[pay_method_type]" sys="depositPaymentMethod" required="false" type="string" length="255" />
+        <field name="Min" variable="deposit_limit[dl_min]" sys="depositMin" required="false" type="string" length="255" />
+        <field name="Daily" variable="deposit_limit[dl_daily]" sys="depositDaily" required="false" type="string" length="255" />
+        <field name="Weekly" variable="deposit_limit[dl_weekly]" sys="depositWeekly" required="false" type="string" length="255" />
+        <field name="Monthly" variable="deposit_limit[dl_monthly]" sys="depositMonthly" required="false" type="string" length="255" />
+        <!-- Current Transaction -->
+        <field name="Transaction Id" variable="trans_id" sys="trnTransId" required="false" type="string" length="255" />
+        <field name="Amount" variable="amount" sys="trnAmount" required="false" type="money" validator="reg@/^[0-9]+(?:\.[0-9]{2}){0,1}$/" length="255" />
+        <field name="Currency" variable="currency" sys="trnCurrency" required="false" type="string" validator="reg@/^[a-z]{3}$/i" length="255" />
+        <field name="Time" variable="time" sys="trnTime" required="false" type="time" format="date@Y-m-d H:i:s" length="255" />
+        <field name="Status" variable="status" sys="trnStatus" required="false" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="IP Address" variable="ip" sys="trnIp" required="false" type="string" validator="Ip" length="255" />
+        <field name="Device Id" variable="device_id" sys="trnDeviceId" required="false" scrubb="false" type="string" length="255" />
+        <field name="Iovation Black Box" variable="Io_bb" sys="trnBb" required="false" scrubb="false" type="string" length="10000" />
+        <!-- Current Transaction Billing Information -->
+        <field name="First Name" variable="billing_information[first_name]" sys="billingFirstName" required="false" type="string" length="255" />
+        <field name="Last Name" variable="billing_information[last_name]" sys="billingLastName" required="false" type="string" length="255" />
+        <field name="Email Address" variable="billing_information[email]" sys="billingEmail" required="false" type="string" length="255" />
+        <field name="Address 1" variable="billing_information[address1]" sys="billingAddress1" required="false" type="string" length="255" />
+        <field name="Address 2" variable="billing_information[address2]" sys="billingAddress2" required="false" type="string" length="255" />
+        <field name="City" variable="billing_information[city]" sys="billingCity" required="false" type="string" length="255" />
+        <field name="Province" variable="billing_information[province]" sys="billingProvince" required="false" type="string" length="255" />
+        <field name="Postal Code" variable="billing_information[postal_code]" sys="billingPostalCode" required="false" type="string" length="255" />
+        <field name="Country" variable="billing_information[country]" sys="billingCountry" required="false" type="string" length="255" />
+        <field name="Phone 1" variable="billing_information[phone1]" sys="billingPhone1" required="false" type="string" length="255" />
+        <field name="Phone 2" variable="billing_information[phon2]" sys="billingPhone2" required="false" type="string" length="255" />
+        <field name="Date of Birth" variable="billing_information[dob]" sys="billingDOB" required="false" type="string" length="255" />
+        <field name="Gender" variable="billing_information[gender]" sys="billingGender" required="false" type="string" length="255" />
+        <!-- Current Transaction Payment Method -->
+        <field name="BIN" variable="payment_method[bin]" sys="paymentFirst" required="card" type="string" length="255" />
+        <field name="Last 4 Digits" variable="payment_method[last_digits]" sys="paymentLast" required="false" type="string" length="255" />
+        <field name="CardHash" variable="payment_method[card_hash]" sys="paymentHash" required="false" type="string" length="255" />
+        <field name="Routing #" variable="payment_method[routing]" sys="paymentRouting" required="false" type="string" length="255" />
+        <field name="Account #" variable="payment_method[account]" sys="paymentAccount" required="false" type="string" length="255" />
+        <field name="Account ID" variable="payment_method[ewallet_id]" sys="paymentEwallet" required="false" type="string" length="255" />
+        <!-- Miscellaneous -->
+        <field name="Quantity" variable="quantity" sys="miscCartCount" required="false" type="number" validator="reg@/[^0-9]+$/" length="255" />
+        <field name="Local Time" variable="local_time" sys="miscLocalTime" required="false" type="time" format="date@Y-m-d H:i:s" length="255" />
+        <field name="Source" variable="source" sys="miscSource" required="false" type="string" validator="reg@/^(internet|mobile|inhouse)$/i" length="255" />
+        <field name="Website" variable="website" sys="miscWebsite" required="false" type="string" length="255" />
+        <field name="Customer's Password" variable="pass" sys="miscPassword" required="false" type="string" validator="reg@/[a-z_\-0-9]/i" length="255" />
+        <field name="Custom Variable" variable="custom_variable" sys="miscCustom" required="false" type="string" length="10000" />
+    </fields>
+</scrubber>

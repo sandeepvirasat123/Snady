@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<scrubber>
+    <scores>
+        <score value="-0.01|10" convert="1" from="response" scrubb="*" type="range" convert="WrongData" length="20" />
+        <score value="10|25" convert="2" from="response" scrubb="*" type="range" convert="WrongData" length="20" />
+        <score value="25|50" convert="3" from="response" scrubb="*" type="range" convert="WrongData" length="20" />
+        <score value="50|75" convert="4" from="response" scrubb="*" type="range" convert="WrongData" length="20" />
+        <score value="75|100" convert="5" from="response" scrubb="*" type="range" convert="WrongData" length="20" />
+    </scores>
+</scrubber>

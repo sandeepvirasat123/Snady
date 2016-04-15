@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<scrubber>
+    <!--
+    Recommendation:
+    Approve
+    Preauth
+    DeclinedorRejected
+    -->
+    <fields>
+        <field name="Internal Transaction Id" variable="internal_trans_id" sys="resReferenceId"  required="true" type="string" length="255" />
+        <field name="Status" variable="status" sys="newStatus"  required="true" type="number" validator="reg@/[^\-0-9]+$/" length="255" />
+        <field name="Description" variable="description" sys="newDescription"  required="true" type="string" length="1000" />
+        <field name="Recommendation" variable="rec" sys="suggest"  required="true" type="string" length="1000" />
+        <field name="Score" variable="score" sys="resScore"  required="true" type="number" validator="reg@/^[0-9]+(?:\.[0-9]{2}){0,1}$/" length="20" />
+        <field name="ThirdParty" variable="third_party" sys="resExternal"  required="true" type="string" length="1000" />
+        <field name="Processors" variable="processors" sys="resProcessors"  required="true" type="string" length="1000" />
+        <field name="Reason" variable="reason" sys="resReason"  required="true" type="number" validator="reg@/[^\-0-9]+$/" length="25" />
+        <field name="Rules Triggered" variable="rules_triggered" sys="resRulesTriggered"  required="true" type="string" length="5000" />
+        <field name="BIN Information" variable="bin_information" sys="resBankInfo"  required="true" type="string" length="5000" />
+    </fields>
+</scrubber>

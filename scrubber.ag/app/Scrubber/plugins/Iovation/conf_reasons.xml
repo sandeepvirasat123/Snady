@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<scrubber>
+    <reasons steps="*" description="new transaction">
+        <reason value="1" Description="Fraud - Credit Card Ring" convert="fraudCardRing" scrubbTypes="*" />
+        <reason value="2" Description="Fraud - Chargeback" convert="fraudChargeback" scrubbTypes="*" />
+        <reason value="3" Description="Fraud - Friendly Chargeback" convert="fraudFriendlyChargeBack" scrubbTypes="*" />
+        <reason value="4" Description="Fraud - Other" convert="fraudOther" scrubbTypes="*" />
+        <reason value="5" Description="Refund" convert="refund" scrubbTypes="*" />
+        <reason value="6" Description="Abnormal/Fraudulent Play" convert="fraudPlay" scrubbTypes="*" />
+        <reason value="7" Description="Bonus Abuse" convert="bonusAbuse" scrubbTypes="*" />
+        <reason value="8" Description="Affiliate Fraud" convert="fraudAffiliate" scrubbTypes="*" />
+        <reason value="9" Description="General Misconduct" convert="misconduct" scrubbTypes="*" />
+        <reason value="10" Description="Multiple Accounts" convert="multipleAccounts" scrubbTypes="*" />
+        <reason value="11" Description="Responsible Gaming" convert="responsible" scrubbTypes="*" />
+        <reason value="12" Description="Underage Player" convert="underage" scrubbTypes="*" />
+        <reason value="13" Description="Misc - Other" convert="other" scrubbTypes="*" />
+    </reasons>
+</scrubber>
